@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa JS // Desarrollo de Videojuegos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{font-family: "Roboto", sans-serif;}
+    </style>
+</head>
+<body>
+    <script>
+        /*Presentacion*/
+        document.write('Hola Mundo,');
+        document.write('<br>');
+        document.write('Mi nombre es Ana Karen Ruiz Barrios y soy estudiante de la carrera de Diseño Gráfico y Animación Digital.');
+        document.write('<br>');
+        document.write('<br>');
+        document.write('Este es mi primer programa en javascript para la clase de Desarrollo de Videojuegos.');
+        document.write('<br>');
+        document.write('<br>');
+
+        /*creacion de variables*/
+        var baseTriangulo;
+        var alturaTriangulo;
+        var ladoCuadrado;
+        var baseRectangulo;
+        var alturaRectangulo;
+
+        /*Pedir datos*/
+        baseTriangulo=prompt('Ingresa la base del triángulo:','');
+        alturaTriangulo=prompt('Ingresa la altura del triángulo:','');
+        ladoCuadrado=prompt('Ingresa el lado del cuadrado','');
+        baseRectangulo=prompt('Ingresa la base del rectángulo','');
+        alturaRectangulo=prompt('Ingresa la altura del rectángulo','');
+
+        /*Conversion de valores*/
+        baseTriangulo=parseFloat(baseTriangulo);
+        alturaTriangulo=parseFloat(alturaTriangulo);
+        ladoCuadrado=parseFloat(ladoCuadrado);
+        baseRectangulo=parseFloat(baseRectangulo);
+        alturaRectangulo=parseFloat(alturaRectangulo);
+
+        /*Operaciones*/
+        //perimetro cuadrado
+        var perimetroCuadrado=ladoCuadrado+ladoCuadrado+ladoCuadrado+ladoCuadrado;
+        perimetroCuadrado=parseFloat(perimetroCuadrado);
+
+        //area triangulo
+        var areaTriangulo=((baseTriangulo*alturaTriangulo)/2);
+        areaTriangulo=parseFloat(areaTriangulo);
+
+        //area rectangulo
+        var areaRectangulo=(baseRectangulo*alturaRectangulo);
+        areaRectangulo=parseFloat(areaRectangulo);
+
+        /*resultados*/
+        document.write('<h3>Triángulo</h3>');
+        document.write('El área del triángulo es: ');
+        document.write(areaTriangulo);
+        document.write('<br>');
+        document.write('<br>');
+        document.write('<h3>Cuadrado</h3>');
+        document.write('El perímetro del cuadrado es: ');
+        document.write(perimetroCuadrado);
+        document.write('<br>');
+        document.write('<br>');
+        document.write('<h3>Rectángulo</h3>');
+        document.write('El área del rectángulo es: ');
+        document.write(areaRectangulo);
+    </script>
+</body>
+</html>
